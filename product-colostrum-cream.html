@@ -1,0 +1,507 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- SEO Meta Tags -->
+    <title>Caprine Colostrum Cream - Luxury Anti-Aging Face Cream | Artisan The Goat</title>
+    <meta name="description" content="Our signature colostrum cream with caprine colostrum, marula oil & organic botanicals. Reduces fine lines, softens scars, plumps skin. Luxury anti-aging skincare from Portland.">
+    
+    <!-- Product Schema Markup -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Product",
+      "name": "Artisan The Goat Colostrum Cream",
+      "description": "Luxury facial cream with caprine colostrum, marula oil, abyssinian oil, and evening primrose. Reduces fine lines, softens scar tissue, and creates plump, lifted skin.",
+      "brand": {
+        "@type": "Brand",
+        "name": "Artisan The Goat"
+      },
+      "offers": {
+        "@type": "Offer",
+        "url": "https://artisanthegoat.com/products/colostrum-cream",
+        "priceCurrency": "USD",
+        "price": "44.97",
+        "availability": "https://schema.org/InStock"
+      },
+      "aggregateRating": {
+        "@type": "AggregateRating",
+        "ratingValue": "5.0",
+        "reviewCount": "12"
+      }
+    }
+    </script>
+    
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            line-height: 1.6;
+            color: #333;
+        }
+        
+        .container { max-width: 1200px; margin: 0 auto; padding: 20px; }
+        
+        header {
+            background: white;
+            padding: 20px 0;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            margin-bottom: 20px;
+        }
+        
+        .breadcrumb {
+            color: #666;
+            margin-bottom: 20px;
+        }
+        
+        .breadcrumb a {
+            color: #8b6f47;
+            text-decoration: none;
+        }
+        
+        .product-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 60px;
+            margin: 40px 0;
+        }
+        
+        .product-images {
+            position: sticky;
+            top: 20px;
+            height: fit-content;
+        }
+        
+        .main-image {
+            background: linear-gradient(135deg, #f5ebe0 0%, #e3d5ca 100%);
+            padding: 60px;
+            border-radius: 10px;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        
+        h1 {
+            font-size: 2.2em;
+            color: #8b6f47;
+            margin-bottom: 10px;
+        }
+        
+        .subtitle {
+            font-size: 1.1em;
+            color: #666;
+            margin-bottom: 20px;
+        }
+        
+        .stars {
+            color: #f4a460;
+            font-size: 1.2em;
+            margin-bottom: 20px;
+        }
+        
+        .price {
+            font-size: 2em;
+            color: #8b6f47;
+            font-weight: bold;
+            margin-bottom: 30px;
+        }
+        
+        .premium-badge {
+            display: inline-block;
+            background: linear-gradient(135deg, #d4af37 0%, #f4d03f 100%);
+            color: white;
+            padding: 8px 20px;
+            border-radius: 25px;
+            font-weight: 600;
+            font-size: 0.9em;
+            margin-bottom: 20px;
+        }
+        
+        .short-description {
+            font-size: 1.1em;
+            line-height: 1.8;
+            margin-bottom: 30px;
+            padding: 25px;
+            background: #f5ebe0;
+            border-radius: 10px;
+        }
+        
+        .benefits-list {
+            list-style: none;
+            margin: 30px 0;
+        }
+        
+        .benefits-list li {
+            padding: 12px 0 12px 30px;
+            position: relative;
+            line-height: 1.6;
+        }
+        
+        .benefits-list li:before {
+            content: "✓";
+            position: absolute;
+            left: 0;
+            color: #8b6f47;
+            font-weight: bold;
+            font-size: 1.3em;
+        }
+        
+        .cta-button {
+            display: block;
+            width: 100%;
+            background: #8b6f47;
+            color: white;
+            padding: 18px;
+            text-align: center;
+            text-decoration: none;
+            border-radius: 5px;
+            font-size: 1.2em;
+            font-weight: 600;
+            margin: 20px 0;
+            border: none;
+            cursor: pointer;
+        }
+        
+        h2 {
+            font-size: 1.8em;
+            color: #8b6f47;
+            margin: 40px 0 20px;
+        }
+        
+        h3 {
+            font-size: 1.3em;
+            color: #8b6f47;
+            margin: 25px 0 15px;
+        }
+        
+        .ingredient-card {
+            background: #f9f9f9;
+            padding: 20px;
+            border-radius: 8px;
+            margin: 15px 0;
+        }
+        
+        .faq-item {
+            background: #f9f9f9;
+            padding: 20px;
+            margin: 15px 0;
+            border-radius: 8px;
+        }
+        
+        .faq-question {
+            font-weight: 600;
+            color: #8b6f47;
+            margin-bottom: 10px;
+        }
+        
+        .review-card {
+            background: #f9f9f9;
+            padding: 25px;
+            margin: 15px 0;
+            border-radius: 8px;
+        }
+        
+        .badge-grid {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 15px;
+            margin: 30px 0;
+        }
+        
+        .badge {
+            background: white;
+            border: 2px solid #8b6f47;
+            padding: 10px 20px;
+            border-radius: 25px;
+            font-weight: 600;
+            color: #8b6f47;
+        }
+        
+        .highlight-box {
+            background: linear-gradient(135deg, #f5ebe0 0%, #e3d5ca 100%);
+            padding: 30px;
+            border-radius: 10px;
+            margin: 30px 0;
+        }
+        
+        @media (max-width: 968px) {
+            .product-grid { grid-template-columns: 1fr; }
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <div class="container">
+        <div class="breadcrumb">
+            <a href="../index.html">Home</a> > <a href="#">Products</a> > Colostrum Cream
+        </div>
+    </div>
+</header>
+
+<div class="container">
+    <div class="product-grid">
+        
+        <!-- PRODUCT IMAGES -->
+        <div class="product-images">
+            <div class="main-image">
+                <p style="font-size: 100px;">✨</p>
+                <p style="color: #8b6f47; margin-top: 20px; font-weight: 600;">Artisan Colostrum Cream</p>
+                <p style="color: #999; font-size: 0.9em; margin-top: 10px;">Luxury Anti-Aging Formula</p>
+            </div>
+        </div>
+        
+        <!-- PRODUCT INFO -->
+        <div class="product-info">
+            <span class="premium-badge">✨ SIGNATURE PRODUCT ✨</span>
+            
+            <h1>Caprine Colostrum Cream</h1>
+            
+            <p class="subtitle">Luxury Anti-Aging Face Cream | Our Most Indulgent Formula</p>
+            
+            <div class="stars">⭐⭐⭐⭐⭐ <span style="color: #666; font-size: 0.8em;">(12 reviews)</span></div>
+            
+            <div class="price">$44.97</div>
+            
+            <div class="short-description">
+                <p><strong>Our signature luxury cream.</strong> We pair caprine colostrum—nature's most nutrient-rich element—with complementary organic carrier oils like marula, abyssinian, and evening primrose. This opulent, indulgently moisturizing formula smooths fine lines, softens scar tissue, and gives your skin a plump, lifted look.</p>
+            </div>
+            
+            <h3>Why Colostrum is Extraordinary for Skin</h3>
+            
+            <p style="margin-bottom: 20px;">Caprine colostrum is the "first milk" produced by goats immediately after giving birth. It contains everything a newborn kid needs to survive—making it one of nature's most concentrated sources of:</p>
+            
+            <ul class="benefits-list">
+                <li><strong>Growth Factors</strong> - Stimulate cellular regeneration and skin repair</li>
+                <li><strong>Immunoglobulins</strong> - Protect and strengthen skin's natural barrier</li>
+                <li><strong>AHA-Lactic Acid</strong> - Gently exfoliate and brighten</li>
+                <li><strong>Amino Acids & Peptides</strong> - Build collagen and elastin</li>
+                <li><strong>Enzymes & Minerals</strong> - Nourish at the cellular level</li>
+                <li><strong>Vitamins A, C, D, E</strong> - Complete antioxidant protection</li>
+            </ul>
+            
+            <h3>Key Benefits</h3>
+            
+            <ul class="benefits-list">
+                <li><strong>Reduces Fine Lines & Wrinkles</strong> - Visibly plumps and smooths skin texture</li>
+                <li><strong>Softens Scar Tissue</strong> - Helps fade acne scars, surgical scars, and hyperpigmentation</li>
+                <li><strong>Plump, Lifted Look</strong> - Marula and abyssinian oils firm and tone</li>
+                <li><strong>Lavishly Moisturizes</strong> - Deep, long-lasting hydration without greasiness</li>
+                <li><strong>Restores & Rebuilds</strong> - Nutrients support healthy cell turnover</li>
+                <li><strong>Natural Vibrant Glow</strong> - Evening primrose and sea buckthorn brighten</li>
+                <li><strong>Anti-Aging Powerhouse</strong> - CoQ10 and fulvic acid fight free radicals</li>
+            </ul>
+            
+            <button class="cta-button">Add to Cart - $44.97</button>
+            
+            <div class="badge-grid">
+                <span class="badge">Signature Formula</span>
+                <span class="badge">Cruelty-Free</span>
+                <span class="badge">Paraben-Free</span>
+                <span class="badge">Fragrance-Free</span>
+                <span class="badge">Portland Made</span>
+            </div>
+        </div>
+    </div>
+    
+    <!-- DETAILED DESCRIPTION -->
+    <div style="margin: 60px 0;">
+        
+        <h2>The Most Luxurious Cream We Make</h2>
+        
+        <p style="margin-bottom: 20px;">Colostrum Cream is our signature product offering—and for good reason. This is our most indulgent, opulent formula, crafted for those who want the ultimate in anti-aging skincare.</p>
+        
+        <div class="highlight-box">
+            <h3 style="margin-top: 0;">What Makes Colostrum So Special?</h3>
+            <p>Caprine colostrum holds everything that a newborn baby goat needs to survive and thrive. It's produced for only 48-72 hours after birth, making it incredibly rare and precious. This "first milk" is packed with growth factors, immunoglobulins, and nutrients at concentrations far higher than regular goat milk.</p>
+            <p style="margin-top: 15px;">When applied to skin, these bioactive compounds work synergistically to:</p>
+            <ul style="margin: 15px 0 0 20px;">
+                <li>Accelerate cellular repair and regeneration</li>
+                <li>Boost collagen and elastin production</li>
+                <li>Strengthen your skin's natural protective barrier</li>
+                <li>Deliver intense, lasting hydration</li>
+                <li>Create visibly firmer, more youthful-looking skin</li>
+            </ul>
+        </div>
+        
+        <h3>Complementary Organic Oils</h3>
+        
+        <p style="margin-bottom: 20px;">We've paired caprine colostrum with a carefully curated blend of exotic, organic carrier oils chosen specifically for their anti-aging and skin-regenerating properties:</p>
+        
+        <div class="ingredient-card">
+            <h4 style="color: #8b6f47; margin-bottom: 10px;">🌰 Organic Marula Oil</h4>
+            <p>Rich in omega fatty acids and antioxidants, marula oil absorbs quickly to hydrate, protect, and smooth fine lines. It's been used for centuries in Africa for its skin-healing properties.</p>
+        </div>
+        
+        <div class="ingredient-card">
+            <h4 style="color: #8b6f47; margin-bottom: 10px;">🌾 Organic Abyssinian Oil</h4>
+            <p>Also called "crambe oil," this lightweight oil has exceptional spreadability and creates a silky, non-greasy finish. It strengthens the skin barrier and locks in moisture without clogging pores.</p>
+        </div>
+        
+        <div class="ingredient-card">
+            <h4 style="color: #8b6f47; margin-bottom: 10px;">🌸 Organic Evening Primrose Oil</h4>
+            <p>Loaded with gamma-linolenic acid (GLA), evening primrose oil improves skin elasticity, reduces inflammation, and helps fade hyperpigmentation. It's particularly effective for mature or troubled skin.</p>
+        </div>
+        
+        <div class="ingredient-card">
+            <h4 style="color: #8b6f47; margin-bottom: 10px;">🍊 Organic Sea Buckthorn Oil</h4>
+            <p>One of the only plant sources of omega-7 fatty acids, sea buckthorn promotes skin regeneration, brightens complexion, and protects against UV damage. Its vibrant orange color comes from high levels of beta-carotene.</p>
+        </div>
+        
+        <h3>Additional Powerhouse Ingredients</h3>
+        
+        <div style="background: #f9f9f9; padding: 25px; border-radius: 8px; margin: 20px 0;">
+            <ul style="margin-left: 20px; line-height: 2;">
+                <li><strong>Hyaluronic Acid</strong> - Holds 1000x its weight in water, plumping fine lines</li>
+                <li><strong>Organic Shea Butter</strong> - Deep moisture and skin barrier repair</li>
+                <li><strong>Organic Jojoba Oil</strong> - Balances oil production, prevents breakouts</li>
+                <li><strong>MSM (Methylsulfonylmethane)</strong> - Supports collagen production</li>
+                <li><strong>Fulvic Acid</strong> - Powerful antioxidant and nutrient delivery system</li>
+                <li><strong>CoQ10</strong> - Energizes skin cells, reduces oxidative stress</li>
+                <li><strong>Vitamin E</strong> - Protects against free radical damage</li>
+            </ul>
+        </div>
+        
+        <h2>Who This Cream is For</h2>
+        
+        <p style="margin-bottom: 20px;">Colostrum Cream is ideal if you're looking for:</p>
+        
+        <ul style="margin: 20px 0 20px 30px; line-height: 1.8;">
+            <li><strong>Advanced Anti-Aging</strong> - Visible reduction in fine lines, wrinkles, and loss of firmness</li>
+            <li><strong>Scar Treatment</strong> - Fading acne scars, surgical scars, or hyperpigmentation</li>
+            <li><strong>Intensive Repair</strong> - Recovering from sun damage, harsh treatments, or environmental stress</li>
+            <li><strong>Luxury Experience</strong> - Our most opulent, indulgent formula with exotic ingredients</li>
+            <li><strong>Mature Skin</strong> - 35+ years old or experiencing accelerated aging</li>
+            <li><strong>Special Occasions</strong> - When you want to look your absolute best</li>
+        </ul>
+        
+        <div class="highlight-box">
+            <h3 style="margin-top: 0;">The Difference You'll See</h3>
+            <p><strong>Week 1-2:</strong> Immediate hydration, smoother texture, radiant glow</p>
+            <p style="margin-top: 10px;"><strong>Week 3-4:</strong> Visibly plumper skin, fine lines softened, improved firmness</p>
+            <p style="margin-top: 10px;"><strong>Week 6-8:</strong> Scars begin fading, deeper wrinkles reduced, lifted appearance</p>
+            <p style="margin-top: 10px;"><strong>Week 12+:</strong> Dramatically younger-looking skin, continued improvement with use</p>
+        </div>
+        
+        <h2>How to Use</h2>
+        
+        <h3>Daily Routine:</h3>
+        <ol style="margin: 15px 0 15px 30px; line-height: 1.8;">
+            <li>Cleanse face with gentle cleanser</li>
+            <li>Apply toner or essence if desired</li>
+            <li>While skin is slightly damp, take a pearl-sized amount of Colostrum Cream</li>
+            <li>Warm between fingertips</li>
+            <li>Gently press into face, neck, and décolletage using upward motions</li>
+            <li>Allow 1-2 minutes to fully absorb</li>
+            <li>Follow with SPF in the morning</li>
+        </ol>
+        
+        <h3>For Scar Treatment:</h3>
+        <ol style="margin: 15px 0 15px 30px; line-height: 1.8;">
+            <li>Apply a small amount directly to scarred areas</li>
+            <li>Gently massage in circular motions for 30 seconds</li>
+            <li>Use twice daily for best results</li>
+            <li>Be patient—scar fading takes 6-12 weeks of consistent use</li>
+        </ol>
+        
+        <h3>Pro Tips:</h3>
+        <ul style="margin: 15px 0 15px 30px; line-height: 1.8;">
+            <li>Use at night for maximum regeneration while you sleep</li>
+            <li>Can be layered over serums (apply serum first)</li>
+            <li>A little goes a long way—this is a concentrated formula</li>
+            <li>Store in a cool, dry place to preserve potency</li>
+            <li>Pair with our Face Cream for daytime if this feels too rich for AM use</li>
+        </ul>
+        
+        <h2>Complete Ingredient List</h2>
+        
+        <div style="background: #f9f9f9; padding: 25px; border-radius: 8px; margin: 20px 0;">
+            <p style="margin-bottom: 15px; line-height: 1.8;"><strong>Ingredients:</strong> Aqua (Purified Water), Caprine Colostrum, Organic Aloe Barbadensis (Aloe Leaf) Extract, Organic Butyrospermum Parkii (Shea Butter), Cetearyl Alcohol and Glyceryl Stearate and Chlorelleth-20 (Plant-Based Emulsifier), Organic Sclerocarya Birrea (Marula) Oil, Organic Crambe Abyssinica (Abyssinian) Oil, Stearic Acid, Sodium Hyaluronate (Hyaluronic Acid), Organic Simmondsia Chinensis (Jojoba) Oil, Methylsulfonylmethane (MSM), Fulvic Acid, Phenoxyethanol and Benzoic Acid and Dehydroacetic Acid (Preservative System), Organic Oenothera Biennis (Evening Primrose) Oil, Organic Hippophae Rhamnoides (Sea Buckthorn) Oil, CoQ10 (Coenzyme Q10), Vitamin E (Tocopherol)</p>
+            
+            <p style="margin-top: 20px;"><strong>What We NEVER Use:</strong></p>
+            <p>✗ Parabens ✗ Synthetic Fragrances ✗ Phthalates ✗ Sulfates ✗ GMOs ✗ Mineral Oil ✗ Animal Testing</p>
+        </div>
+        
+        <h2>Frequently Asked Questions</h2>
+        
+        <div class="faq-item">
+            <div class="faq-question">How is this different from the Face Cream?</div>
+            <div class="faq-answer">Colostrum Cream is our luxury, intensive treatment formula with caprine colostrum (not just goat milk) and exotic oils like marula and abyssinian. It's more concentrated, richer, and specifically targets advanced aging and scarring. Face Cream is our daily-use formula that's lighter and works for all skin types. Many customers use Colostrum Cream at night and Face Cream during the day.</div>
+        </div>
+        
+        <div class="faq-item">
+            <div class="faq-question">Will this help with acne scars?</div>
+            <div class="faq-answer">Yes! The growth factors in colostrum combined with evening primrose and sea buckthorn oil work together to fade hyperpigmentation and smooth scar tissue. Expect to see improvement within 6-8 weeks of consistent use. For active acne, we recommend our Face Cream instead.</div>
+        </div>
+        
+        <div class="faq-item">
+            <div class="faq-question">Is this too rich for oily skin?</div>
+            <div class="faq-answer">It is richer than our Face Cream, so if you have very oily skin, we recommend using it at night only or just on problem areas. The abyssinian oil actually helps balance oil production despite the rich texture. Many with combination skin love using this on dry areas and Face Cream on oilier zones.</div>
+        </div>
+        
+        <div class="faq-item">
+            <div class="faq-question">What does it smell like?</div>
+            <div class="faq-answer">Colostrum Cream is fragrance-free. You may detect a very subtle, natural scent from the sea buckthorn oil (slightly earthy/nutty), but it's not noticeable once applied and absorbed.</div>
+        </div>
+        
+        <div class="faq-item">
+            <div class="faq-question">Can I use this during pregnancy?</div>
+            <div class="faq-answer">Our ingredients are natural and gentle. However, we always recommend consulting your healthcare provider about any skincare products during pregnancy or nursing.</div>
+        </div>
+        
+        <div class="faq-item">
+            <div class="faq-question">How long does a jar last?</div>
+            <div class="faq-answer">Because this is a concentrated formula, a little goes a long way. Most customers find a 2 oz jar lasts 2-3 months with daily use on face and neck.</div>
+        </div>
+        
+        <h2>Customer Reviews</h2>
+        
+        <div class="review-card">
+            <div class="stars">⭐⭐⭐⭐⭐</div>
+            <p>"Great product! Very nourishing. I use this at night and wake up with plumper, smoother skin. Worth every penny."</p>
+            <p style="margin-top: 10px; color: #666; font-style: italic;">— Verified Customer</p>
+        </div>
+        
+        <div class="review-card">
+            <div class="stars">⭐⭐⭐⭐⭐</div>
+            <p>"The cream works great and is hand made by folks that care about their products. I've been using it on old acne scars and they're definitely fading. This is my third jar!"</p>
+            <p style="margin-top: 10px; color: #666; font-style: italic;">— Verified Customer</p>
+        </div>
+        
+        <div class="review-card">
+            <div class="stars">⭐⭐⭐⭐⭐</div>
+            <p>"This is the most luxurious face cream I've ever used. The texture is incredible—rich but not heavy. My skin looks noticeably firmer after just a few weeks."</p>
+            <p style="margin-top: 10px; color: #666; font-style: italic;">— Verified Customer</p>
+        </div>
+        
+        <h2>Product Specifications</h2>
+        
+        <div style="background: #f9f9f9; padding: 25px; border-radius: 8px; margin: 20px 0;">
+            <ul style="list-style: none;">
+                <li><strong>Size:</strong> 2 fl oz (56g)</li>
+                <li><strong>Packaging:</strong> Glass jar (recyclable)</li>
+                <li><strong>Shelf Life:</strong> 12 months unopened, 6 months after opening</li>
+                <li><strong>Made in:</strong> Portland, Oregon, USA</li>
+                <li><strong>Product Line:</strong> Signature/Luxury</li>
+                <li><strong>Skin Type:</strong> All types, especially mature or scarred</li>
+                <li><strong>Texture:</strong> Rich cream</li>
+                <li><strong>Finish:</strong> Luminous, plumped</li>
+                <li><strong>Scent:</strong> Fragrance-free (subtle natural scent)</li>
+                <li><strong>Best Used:</strong> Evening/night or as intensive treatment</li>
+            </ul>
+        </div>
+        
+        <div style="text-align: center; margin: 60px 0;">
+            <h2>Experience Our Signature Formula</h2>
+            <p style="margin: 20px 0; font-size: 1.1em;">Indulge in our most luxurious anti-aging cream. Your skin deserves this level of care.</p>
+            <button class="cta-button" style="max-width: 400px; margin: 20px auto;">Add to Cart - $44.97</button>
+            <p style="margin-top: 20px; font-weight: 600;">Free Shipping on Orders Over $50 | Satisfaction Guaranteed</p>
+        </div>
+        
+    </div>
+</div>
+
+</body>
+</html>
