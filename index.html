@@ -1,0 +1,563 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- SEO Meta Tags -->
+    <title>Organic Goat Milk Moisturizer | Portland Farm | Artisan Goat</title>
+    <meta name="description" content="World's first organic goat milk facial moisturizer from our Portland farm. Natural anti-aging skincare with AHAs, vitamin A & retinol. Paraben-free since 2017.">
+    <meta name="keywords" content="organic goat milk moisturizer, natural face cream, Portland skincare, paraben-free, anti-aging, goat milk skincare">
+    
+    <!-- Open Graph Meta Tags -->
+    <meta property="og:title" content="Organic Goat Milk Moisturizer | Artisan The Goat Portland Farm">
+    <meta property="og:description" content="World's first organic goat milk facial moisturizer. Natural anti-aging skincare with AHAs & vitamin A from our Portland farm. Paraben-free, cruelty-free.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://artisanthegoat.com">
+    
+    <!-- Schema Markup - Organization + LocalBusiness -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": ["Organization", "LocalBusiness"],
+      "name": "Artisan The Goat",
+      "alternateName": "Artisan The Goat Skincare",
+      "description": "World's first organic goat milk facial moisturizer. Small-batch natural skincare handcrafted on our Portland, Oregon farm since 2017. Paraben-free, cruelty-free, USDA organic ingredients.",
+      "url": "https://artisanthegoat.com",
+      "foundingDate": "2017",
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Portland",
+        "addressRegion": "OR",
+        "addressCountry": "US"
+      },
+      "areaServed": {
+        "@type": "Country",
+        "name": "United States"
+      },
+      "slogan": "World's First Organic Goat Milk Moisturizer - From Our Portland Farm to Your Face",
+      "priceRange": "$$",
+      "aggregateRating": {
+        "@type": "AggregateRating",
+        "ratingValue": "4.9",
+        "reviewCount": "47",
+        "bestRating": "5",
+        "worstRating": "1"
+      }
+    }
+    </script>
+    
+    <!-- Schema Markup - WebSite with Search -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "WebSite",
+      "name": "Artisan The Goat",
+      "url": "https://artisanthegoat.com",
+      "potentialAction": {
+        "@type": "SearchAction",
+        "target": {
+          "@type": "EntryPoint",
+          "urlTemplate": "https://artisanthegoat.com/search?q={search_term_string}"
+        },
+        "query-input": "required name=search_term_string"
+      }
+    }
+    </script>
+    
+    <!-- Schema Markup - FAQPage -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Is goat milk face cream suitable for sensitive skin?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes! Goat milk has a pH similar to human skin and is naturally gentle. Our organic formulation is designed for all skin types, including sensitive and acne-prone skin. The natural alpha-hydroxy acids in goat milk provide gentle exfoliation without irritation."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Will goat milk moisturizer clog my pores?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "No. Despite being richly hydrating, our lightweight formula absorbs quickly and won't clog pores. The fatty acids in goat milk are non-comedogenic, and the lactic acid actually helps prevent clogged pores. Many customers with oily or combination skin love it."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How long does a jar of face cream last?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Most customers find that a 2 oz jar lasts 2-3 months with daily use, since a little goes a long way. Apply a dime-sized amount for your face and neck."
+          }
+        }
+      ]
+    }
+    </script>
+    
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background: #fdfbf7;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+        
+        /* Header */
+        header {
+            background: white;
+            padding: 20px 0;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+        
+        .logo {
+            font-size: 24px;
+            font-weight: bold;
+            color: #8b6f47;
+        }
+        
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        
+        nav ul {
+            display: flex;
+            list-style: none;
+            gap: 30px;
+        }
+        
+        nav a {
+            text-decoration: none;
+            color: #333;
+            font-weight: 500;
+        }
+        
+        /* Hero Section */
+        .hero {
+            background: linear-gradient(135deg, #f5ebe0 0%, #e3d5ca 100%);
+            padding: 80px 20px;
+            text-align: center;
+        }
+        
+        h1 {
+            font-size: 2.5em;
+            color: #8b6f47;
+            margin-bottom: 20px;
+            line-height: 1.2;
+        }
+        
+        .subtitle {
+            font-size: 1.2em;
+            color: #666;
+            margin-bottom: 30px;
+        }
+        
+        .hero-description {
+            max-width: 800px;
+            margin: 0 auto 40px;
+            font-size: 1.1em;
+            line-height: 1.8;
+        }
+        
+        .cta-button {
+            display: inline-block;
+            background: #8b6f47;
+            color: white;
+            padding: 15px 40px;
+            text-decoration: none;
+            border-radius: 5px;
+            font-size: 1.1em;
+            font-weight: 600;
+            transition: background 0.3s;
+        }
+        
+        .cta-button:hover {
+            background: #6f5639;
+        }
+        
+        /* Section Styling */
+        section {
+            padding: 60px 20px;
+        }
+        
+        h2 {
+            font-size: 2em;
+            color: #8b6f47;
+            margin-bottom: 30px;
+            text-align: center;
+        }
+        
+        h3 {
+            font-size: 1.4em;
+            color: #8b6f47;
+            margin: 30px 0 15px;
+        }
+        
+        /* Benefits Grid */
+        .benefits-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 30px;
+            margin: 40px 0;
+        }
+        
+        .benefit-card {
+            background: white;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+        }
+        
+        .benefit-card h3 {
+            margin-top: 0;
+            font-size: 1.2em;
+        }
+        
+        /* Checklist */
+        .checklist {
+            list-style: none;
+            margin: 20px 0;
+        }
+        
+        .checklist li {
+            padding: 10px 0 10px 30px;
+            position: relative;
+            line-height: 1.6;
+        }
+        
+        .checklist li:before {
+            content: "✓";
+            position: absolute;
+            left: 0;
+            color: #8b6f47;
+            font-weight: bold;
+            font-size: 1.2em;
+        }
+        
+        /* Story Section */
+        .story-section {
+            background: white;
+        }
+        
+        /* Reviews */
+        .reviews {
+            background: #f5ebe0;
+        }
+        
+        .review-card {
+            background: white;
+            padding: 30px;
+            margin: 20px 0;
+            border-radius: 10px;
+            box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+        }
+        
+        .stars {
+            color: #f4a460;
+            font-size: 1.2em;
+            margin-bottom: 10px;
+        }
+        
+        /* FAQ */
+        .faq-item {
+            background: white;
+            padding: 25px;
+            margin: 15px 0;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        
+        .faq-question {
+            font-weight: 600;
+            color: #8b6f47;
+            margin-bottom: 10px;
+            font-size: 1.1em;
+        }
+        
+        /* Footer */
+        footer {
+            background: #333;
+            color: white;
+            padding: 40px 20px;
+            text-align: center;
+        }
+        
+        .footer-content {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        
+        /* Code Block for Easy Copying */
+        .copy-section {
+            background: #f8f9fa;
+            padding: 40px;
+            margin: 40px 0;
+            border-left: 4px solid #8b6f47;
+        }
+        
+        .copy-label {
+            font-weight: bold;
+            color: #8b6f47;
+            margin-bottom: 10px;
+            font-size: 0.9em;
+            text-transform: uppercase;
+        }
+        
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 1.8em;
+            }
+            
+            nav ul {
+                flex-direction: column;
+                gap: 10px;
+            }
+            
+            .benefits-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<!-- HEADER -->
+<header>
+    <nav class="container">
+        <div class="logo">Artisan The Goat 🐐</div>
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#products">Products</a></li>
+            <li><a href="#shop">Shop</a></li>
+        </ul>
+    </nav>
+</header>
+
+<!-- HERO SECTION -->
+<section class="hero" id="home">
+    <div class="container">
+        <!-- This is your H1 tag - most important for SEO -->
+        <h1>Organic Goat Milk Facial Moisturizer from Our Portland Farm</h1>
+        
+        <p class="subtitle">World's First Organic Goat Milk Moisturizer | Fresh From Our Farm Since 2017</p>
+        
+        <div class="hero-description">
+            <p>Welcome to Artisan The Goat, home of the world's first organic goat milk moisturizer. Since 2017, we've been crafting luxurious, natural facial moisturizers on our Portland, Oregon farm using fresh goat milk from our three beloved goats.</p>
+            
+            <p>Our organic face cream harnesses nature's most powerful anti-aging ingredients: lactic acid, alpha-hydroxy acids (AHAs), and vitamin A retinol—all naturally present in goat milk. Experience paraben-free, cruelty-free skincare that hydrates, rejuvenates, and reveals your natural radiance.</p>
+            
+            <p>From our farm to your face, each small batch combines USDA certified organic ingredients with the nourishing magic of fresh goat milk. Perfect for all skin types, including sensitive skin.</p>
+        </div>
+        
+        <a href="#shop" class="cta-button">Shop Our Collection</a>
+    </div>
+</section>
+
+<!-- WHY GOAT MILK SECTION -->
+<section id="benefits">
+    <div class="container">
+        <h2>Why Goat Milk is Nature's Perfect Skincare Ingredient</h2>
+        
+        <p style="text-align: center; max-width: 800px; margin: 0 auto 40px;">Goat milk isn't just a trendy ingredient—it's a scientifically-proven skincare powerhouse that's been used for centuries. Here's why our organic goat milk moisturizer transforms your skin:</p>
+        
+        <div class="benefits-grid">
+            <div class="benefit-card">
+                <h3>Natural Alpha-Hydroxy Acids (AHAs)</h3>
+                <p>Goat milk contains lactic acid, a gentle AHA that naturally exfoliates dead skin cells, revealing fresher, brighter, younger-looking skin. Unlike harsh chemical exfoliants, goat milk's AHAs work gently without irritation.</p>
+            </div>
+            
+            <div class="benefit-card">
+                <h3>Vitamin A (Retinol)</h3>
+                <p>Rich in retinyl palmitate, goat milk provides natural vitamin A that helps reduce fine lines, improve skin texture, and boost collagen production—nature's answer to anti-aging.</p>
+            </div>
+            
+            <div class="benefit-card">
+                <h3>Deep Hydration</h3>
+                <p>The fatty acids and triglycerides in goat milk create a protective moisture barrier, keeping your skin hydrated throughout the day without feeling greasy or heavy.</p>
+            </div>
+            
+            <div class="benefit-card">
+                <h3>pH-Balanced</h3>
+                <p>With a pH similar to human skin, goat milk is naturally gentle and helps maintain your skin's protective acid mantle, making it ideal for sensitive skin.</p>
+            </div>
+            
+            <div class="benefit-card">
+                <h3>Vitamins & Minerals</h3>
+                <p>Packed with vitamins B, C, D, and E, plus selenium and zinc, goat milk nourishes your skin at the cellular level while providing antioxidant protection.</p>
+            </div>
+            
+            <div class="benefit-card">
+                <h3>Probiotics</h3>
+                <p>Beneficial bacteria support your skin's microbiome, strengthening your natural barrier and promoting healthier, more resilient skin.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- OUR STORY SECTION -->
+<section class="story-section" id="about">
+    <div class="container">
+        <h2>From Three Goats to a Skincare Revolution</h2>
+        
+        <div style="max-width: 800px; margin: 0 auto;">
+            <p style="margin-bottom: 20px;">Our journey began in 2009, when three charming goats arrived at our Portland farm during a difficult time. What started as therapeutic companionship evolved into something extraordinary.</p>
+            
+            <p style="margin-bottom: 20px;">As our family member regained their strength, these remarkable animals transformed from cherished pets into abundant milk producers. For years, we delighted in goat milk culinary creations—creamy lasagnas, homemade ice cream, rich chocolate milk, and sumptuous mozzarella.</p>
+            
+            <p style="margin-bottom: 20px;">In 2017, inspiration struck. Why not harness the incredible benefits of goat milk for skincare?</p>
+            
+            <p style="margin-bottom: 20px;">We spent months perfecting our formulations, combining fresh goat milk from our farm with USDA certified organic botanical ingredients. The result? A line of facial moisturizers that delivers professional-grade results with complete transparency and integrity.</p>
+            
+            <p>Today, Artisan The Goat represents more than skincare—it's a commitment to purity, sustainability, and the belief that the best beauty products come from honest ingredients and genuine care.</p>
+        </div>
+    </div>
+</section>
+
+<!-- ARTISAN DIFFERENCE -->
+<section id="difference">
+    <div class="container">
+        <h2>Why Choose Artisan The Goat?</h2>
+        
+        <div style="max-width: 900px; margin: 0 auto;">
+            <ul class="checklist">
+                <li><strong>Farm Fresh Goat Milk</strong> – Not reconstituted powder. Fresh milk from our Portland goats in every batch.</li>
+                
+                <li><strong>USDA Certified Organic Ingredients</strong> – We don't compromise. Over 80% organic ingredients in every formulation.</li>
+                
+                <li><strong>Paraben-Free & Cruelty-Free</strong> – No parabens, no titanium dioxide, no animal testing. Ever.</li>
+                
+                <li><strong>Small-Batch Artisan Quality</strong> – Handcrafted in Portland, Oregon with meticulous attention to detail.</li>
+                
+                <li><strong>All Skin Types Welcome</strong> – Gentle enough for sensitive skin, powerful enough for visible results.</li>
+                
+                <li><strong>World's First</strong> – The original organic goat milk moisturizer, established 2017.</li>
+                
+                <li><strong>Sustainable & Local</strong> – Supporting local agriculture and sustainable beauty practices.</li>
+                
+                <li><strong>Non-GMO</strong> – Only pure, natural ingredients your skin recognizes and loves.</li>
+            </ul>
+        </div>
+    </div>
+</section>
+
+<!-- REVIEWS SECTION -->
+<section class="reviews" id="reviews">
+    <div class="container">
+        <h2>What Our Customers Say</h2>
+        
+        <div class="review-card">
+            <div class="stars">⭐⭐⭐⭐⭐</div>
+            <p>"Goat Milk Face Cream is the BEST! Unlike other brands it absorbs well and moisturizes without leaving a greasy film on my face."</p>
+            <p style="margin-top: 10px; color: #666; font-style: italic;">— Verified Customer</p>
+        </div>
+        
+        <div class="review-card">
+            <div class="stars">⭐⭐⭐⭐⭐</div>
+            <p>"The Artisan Face Cream keeps my skin wonderfully moisturized. I was alarmed when my supplier discontinued carrying it—I had to order directly! They included a generous gift of Hand Cream too."</p>
+            <p style="margin-top: 10px; color: #666; font-style: italic;">— Verified Customer</p>
+        </div>
+        
+        <div class="review-card">
+            <div class="stars">⭐⭐⭐⭐⭐</div>
+            <p>"This cream uses all the wonderful attributes of high-butterfat goat milk. You only have one face, so pamper it well!"</p>
+            <p style="margin-top: 10px; color: #666; font-style: italic;">— Verified Customer</p>
+        </div>
+    </div>
+</section>
+
+<!-- FAQ SECTION -->
+<section id="faq">
+    <div class="container">
+        <h2>Frequently Asked Questions</h2>
+        
+        <div style="max-width: 900px; margin: 0 auto;">
+            <div class="faq-item">
+                <div class="faq-question">Is goat milk face cream suitable for sensitive skin?</div>
+                <div class="faq-answer">Yes! Goat milk has a pH similar to human skin and is naturally gentle. Our organic formulation is designed for all skin types, including sensitive and acne-prone skin.</div>
+            </div>
+            
+            <div class="faq-item">
+                <div class="faq-question">Will this clog my pores?</div>
+                <div class="faq-answer">No. Despite being richly hydrating, our lightweight formula absorbs quickly and won't clog pores. Many customers with oily or combination skin love it.</div>
+            </div>
+            
+            <div class="faq-item">
+                <div class="faq-question">Is this vegan?</div>
+                <div class="faq-answer">No, our products contain goat milk. However, they are cruelty-free—our goats are happy, healthy, and treated with love.</div>
+            </div>
+            
+            <div class="faq-item">
+                <div class="faq-question">How long does a jar last?</div>
+                <div class="faq-answer">Most customers find that a 2 oz jar lasts 2-3 months with daily use, since a little goes a long way.</div>
+            </div>
+            
+            <div class="faq-item">
+                <div class="faq-question">Can I use this if I'm pregnant or nursing?</div>
+                <div class="faq-answer">Our ingredients are natural and gentle. However, we always recommend consulting your physician if you're pregnant, nursing, or have any medical conditions.</div>
+            </div>
+            
+            <div class="faq-item">
+                <div class="faq-question">What does it smell like?</div>
+                <div class="faq-answer">Our face cream has a subtle, natural scent from organic frankincense oil—earthy, calming, and luxurious without being overpowering.</div>
+            </div>
+            
+            <div class="faq-item">
+                <div class="faq-question">Do you ship nationwide?</div>
+                <div class="faq-answer">Yes! We ship throughout the United States. Free shipping on orders over $50.</div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- FINAL CTA -->
+<section class="hero" id="shop">
+    <div class="container">
+        <h2>Ready to Experience the Goat Milk Difference?</h2>
+        
+        <p style="max-width: 700px; margin: 0 auto 30px; font-size: 1.1em;">Join hundreds of customers who've discovered the transformative power of organic goat milk skincare. Your skin deserves the purity of farm-fresh ingredients and the expertise of artisan craftsmanship.</p>
+        
+        <p style="margin-bottom: 30px; font-weight: 600;">Free shipping on orders over $50 | 100% satisfaction guarantee | Handcrafted in Portland, Oregon</p>
+        
+        <a href="#" class="cta-button">Shop Now</a>
+    </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+    <div class="footer-content">
+        <h3 style="color: white; margin-bottom: 20px;">About Artisan The Goat</h3>
+        
+        <p style="margin-bottom: 20px;">Established in 2017, Artisan The Goat creates the world's first organic goat milk facial moisturizer on our Portland, Oregon farm. Using fresh goat milk and USDA certified organic ingredients, we craft paraben-free, cruelty-free skincare that harnesses nature's anti-aging power.</p>
+        
+        <p style="margin-bottom: 20px;">Our face creams feature naturally-occurring alpha-hydroxy acids (AHAs), vitamin A retinol, and lactic acid for gentle exfoliation and deep hydration. Perfect for all skin types, our small-batch products deliver professional results with complete ingredient transparency.</p>
+        
+        <p style="font-size: 0.9em; color: #999; margin-top: 30px;">Keywords: organic goat milk moisturizer, natural face cream, Portland skincare, paraben-free, anti-aging, alpha-hydroxy acids, vitamin A retinol, cruelty-free beauty, USDA organic, farm fresh skincare</p>
+        
+        <p style="margin-top: 30px;">&copy; 2017-2025 Artisan The Goat | Portland, Oregon</p>
+    </div>
+</footer>
+
+</body>
+</html>

@@ -1,0 +1,570 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- SEO Meta Tags -->
+    <title>Organic Goat Milk Face Cream - Anti-Aging Natural Moisturizer | Artisan The Goat</title>
+    <meta name="description" content="Luxurious organic goat milk face cream with natural AHAs & vitamin A. Deep hydration, anti-aging benefits, suitable for all skin types. Handcrafted in Portland with fresh goat milk. Paraben-free.">
+    
+    <!-- Product Schema Markup -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Product",
+      "name": "Artisan The Goat Organic Face Cream",
+      "description": "Organic goat milk facial moisturizer with natural alpha-hydroxy acids, vitamin A retinol, and USDA certified organic ingredients. Paraben-free, cruelty-free, suitable for all skin types.",
+      "brand": {
+        "@type": "Brand",
+        "name": "Artisan The Goat"
+      },
+      "offers": {
+        "@type": "Offer",
+        "url": "https://artisanthegoat.com/products/face-cream",
+        "priceCurrency": "USD",
+        "price": "34.97",
+        "availability": "https://schema.org/InStock",
+        "itemCondition": "https://schema.org/NewCondition"
+      },
+      "aggregateRating": {
+        "@type": "AggregateRating",
+        "ratingValue": "4.9",
+        "reviewCount": "47"
+      },
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Volume",
+          "value": "2 oz"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Skin Type",
+          "value": "All Skin Types"
+        }
+      ]
+    }
+    </script>
+    
+    <!-- Breadcrumb Schema -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "https://artisanthegoat.com"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Products",
+          "item": "https://artisanthegoat.com/collections/beauty"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": "Face Cream",
+          "item": "https://artisanthegoat.com/products/face-cream"
+        }
+      ]
+    }
+    </script>
+    
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+            line-height: 1.6;
+            color: #333;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        
+        /* Header */
+        header {
+            background: white;
+            padding: 20px 0;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        
+        .breadcrumb {
+            margin-bottom: 20px;
+            color: #666;
+        }
+        
+        .breadcrumb a {
+            color: #8b6f47;
+            text-decoration: none;
+        }
+        
+        /* Product Grid */
+        .product-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 60px;
+            margin: 40px 0;
+        }
+        
+        .product-images {
+            position: sticky;
+            top: 20px;
+            height: fit-content;
+        }
+        
+        .main-image {
+            background: #f5f5f5;
+            padding: 40px;
+            border-radius: 10px;
+            margin-bottom: 20px;
+            text-align: center;
+        }
+        
+        .thumbnail-grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 10px;
+        }
+        
+        .thumbnail {
+            background: #f5f5f5;
+            padding: 10px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        
+        /* Product Info */
+        h1 {
+            font-size: 2.2em;
+            color: #8b6f47;
+            margin-bottom: 10px;
+        }
+        
+        .subtitle {
+            font-size: 1.1em;
+            color: #666;
+            margin-bottom: 20px;
+        }
+        
+        .stars {
+            color: #f4a460;
+            font-size: 1.2em;
+            margin-bottom: 20px;
+        }
+        
+        .price {
+            font-size: 2em;
+            color: #8b6f47;
+            font-weight: bold;
+            margin-bottom: 30px;
+        }
+        
+        .short-description {
+            font-size: 1.1em;
+            line-height: 1.8;
+            margin-bottom: 30px;
+            padding: 25px;
+            background: #f5ebe0;
+            border-radius: 10px;
+        }
+        
+        .benefits-list {
+            list-style: none;
+            margin: 30px 0;
+        }
+        
+        .benefits-list li {
+            padding: 12px 0 12px 30px;
+            position: relative;
+            line-height: 1.6;
+        }
+        
+        .benefits-list li:before {
+            content: "✓";
+            position: absolute;
+            left: 0;
+            color: #8b6f47;
+            font-weight: bold;
+            font-size: 1.3em;
+        }
+        
+        .cta-button {
+            display: block;
+            width: 100%;
+            background: #8b6f47;
+            color: white;
+            padding: 18px;
+            text-align: center;
+            text-decoration: none;
+            border-radius: 5px;
+            font-size: 1.2em;
+            font-weight: 600;
+            margin: 20px 0;
+            border: none;
+            cursor: pointer;
+        }
+        
+        .cta-button:hover {
+            background: #6f5639;
+        }
+        
+        /* Product Details Tabs */
+        .product-details {
+            margin: 60px 0;
+        }
+        
+        h2 {
+            font-size: 1.8em;
+            color: #8b6f47;
+            margin: 40px 0 20px;
+        }
+        
+        h3 {
+            font-size: 1.3em;
+            color: #8b6f47;
+            margin: 25px 0 15px;
+        }
+        
+        .ingredient-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+            margin: 20px 0;
+        }
+        
+        .ingredient-card {
+            background: #f9f9f9;
+            padding: 20px;
+            border-radius: 8px;
+        }
+        
+        .ingredient-card h4 {
+            color: #8b6f47;
+            margin-bottom: 10px;
+        }
+        
+        /* FAQ */
+        .faq-item {
+            background: #f9f9f9;
+            padding: 20px;
+            margin: 15px 0;
+            border-radius: 8px;
+        }
+        
+        .faq-question {
+            font-weight: 600;
+            color: #8b6f47;
+            margin-bottom: 10px;
+        }
+        
+        /* Reviews */
+        .review-card {
+            background: #f9f9f9;
+            padding: 25px;
+            margin: 15px 0;
+            border-radius: 8px;
+        }
+        
+        .badge-grid {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 15px;
+            margin: 30px 0;
+        }
+        
+        .badge {
+            background: white;
+            border: 2px solid #8b6f47;
+            padding: 10px 20px;
+            border-radius: 25px;
+            font-weight: 600;
+            color: #8b6f47;
+        }
+        
+        @media (max-width: 968px) {
+            .product-grid {
+                grid-template-columns: 1fr;
+            }
+            
+            .product-images {
+                position: relative;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <div class="container">
+        <div class="breadcrumb">
+            <a href="index.html">Home</a> > <a href="#">Products</a> > Face Cream
+        </div>
+    </div>
+</header>
+
+<div class="container">
+    <div class="product-grid">
+        
+        <!-- PRODUCT IMAGES -->
+        <div class="product-images">
+            <div class="main-image">
+                <p style="font-size: 100px;">🧴</p>
+                <p style="color: #999; margin-top: 20px;">Artisan Organic Goat Milk<br>Face Cream Jar</p>
+                <p style="color: #999; font-size: 0.9em; margin-top: 10px;">Alt text: "Artisan The Goat organic goat milk face cream jar"</p>
+            </div>
+            
+            <div class="thumbnail-grid">
+                <div class="thumbnail">
+                    <p style="font-size: 40px; text-align: center;">🧴</p>
+                    <p style="font-size: 0.7em; text-align: center; color: #999;">Texture</p>
+                </div>
+                <div class="thumbnail">
+                    <p style="font-size: 40px; text-align: center;">🌿</p>
+                    <p style="font-size: 0.7em; text-align: center; color: #999;">Ingredients</p>
+                </div>
+                <div class="thumbnail">
+                    <p style="font-size: 40px; text-align: center;">🐐</p>
+                    <p style="font-size: 0.7em; text-align: center; color: #999;">Our Goats</p>
+                </div>
+                <div class="thumbnail">
+                    <p style="font-size: 40px; text-align: center;">✨</p>
+                    <p style="font-size: 0.7em; text-align: center; color: #999;">Results</p>
+                </div>
+            </div>
+        </div>
+        
+        <!-- PRODUCT INFO -->
+        <div class="product-info">
+            <h1>Artisan Organic Goat Milk Face Cream</h1>
+            
+            <p class="subtitle">World's First Organic Goat Milk Facial Moisturizer | Fresh From Our Portland Farm</p>
+            
+            <div class="stars">⭐⭐⭐⭐⭐ <span style="color: #666; font-size: 0.8em;">(47 reviews)</span></div>
+            
+            <div class="price">$34.97</div>
+            
+            <div class="short-description">
+                <p>Experience the transformative power of fresh goat milk in this luxurious, organic face cream. Crafted on our Portland farm with USDA certified organic ingredients, this anti-aging moisturizer delivers deep hydration without greasiness while naturally exfoliating and brightening your skin. Perfect for all skin types, including sensitive skin.</p>
+            </div>
+            
+            <h3>Why You'll Love This Organic Face Cream</h3>
+            
+            <ul class="benefits-list">
+                <li><strong>Deep Hydration Without Greasiness</strong> - Lightweight formula absorbs quickly, leaving skin soft and nourished all day</li>
+                
+                <li><strong>Natural Anti-Aging</strong> - Alpha-hydroxy acids (AHAs) and vitamin A retinol reduce fine lines and improve skin texture</li>
+                
+                <li><strong>Gentle Exfoliation</strong> - Lactic acid naturally removes dead skin cells for brighter, more radiant skin</li>
+                
+                <li><strong>Calms Sensitive Skin</strong> - pH-balanced formula soothes irritation and strengthens your skin's natural barrier</li>
+                
+                <li><strong>USDA Certified Organic</strong> - Premium botanical ingredients including shea butter, argan oil, and jojoba oil</li>
+                
+                <li><strong>Fresh Goat Milk</strong> - Not reconstituted powder—real, fresh milk from our three beloved Portland goats</li>
+                
+                <li><strong>Paraben & Cruelty-Free</strong> - Clean beauty you can feel good about</li>
+                
+                <li><strong>Suitable for All Skin Types</strong> - Dry, oily, combination, sensitive, mature—this cream works for everyone</li>
+            </ul>
+            
+            <button class="cta-button">Add to Cart</button>
+            
+            <div class="badge-grid">
+                <span class="badge">USDA Organic</span>
+                <span class="badge">Cruelty-Free</span>
+                <span class="badge">Paraben-Free</span>
+                <span class="badge">Made in Portland</span>
+                <span class="badge">Small Batch</span>
+                <span class="badge">Non-GMO</span>
+            </div>
+        </div>
+    </div>
+    
+    <!-- PRODUCT DETAILS -->
+    <div class="product-details">
+        
+        <h2>The Ultimate Natural Facial Moisturizer</h2>
+        
+        <p style="margin-bottom: 20px;">Welcome to skincare that's pure, powerful, and personal.</p>
+        
+        <p style="margin-bottom: 20px;">Our organic goat milk face cream represents years of artisan craftsmanship and a deep commitment to creating the world's finest natural moisturizer. What started as a family journey with three goats in 2009 has blossomed into a skincare line that's changing how people think about clean beauty.</p>
+        
+        <h3>What Makes This Face Cream Special?</h3>
+        
+        <p style="margin-bottom: 20px;">At the heart of every jar is fresh goat milk from our Portland farm—not reconstituted powder, not generic ingredients, but real milk from goats we know by name. This fresh goat milk is nature's perfect skincare ingredient, packed with:</p>
+        
+        <div class="ingredient-grid">
+            <div class="ingredient-card">
+                <h4>Lactic Acid (AHA)</h4>
+                <p>A gentle alpha-hydroxy acid that exfoliates dead skin cells, revealing brighter, smoother skin underneath</p>
+            </div>
+            
+            <div class="ingredient-card">
+                <h4>Vitamin A (Retinol)</h4>
+                <p>Natural retinyl palmitate helps boost collagen, reduce fine lines, and improve skin elasticity</p>
+            </div>
+            
+            <div class="ingredient-card">
+                <h4>Fatty Acids</h4>
+                <p>Deep moisture that strengthens your skin's barrier without clogging pores</p>
+            </div>
+            
+            <div class="ingredient-card">
+                <h4>Vitamins B, C, D, E</h4>
+                <p>A complete vitamin complex that nourishes at the cellular level</p>
+            </div>
+            
+            <div class="ingredient-card">
+                <h4>Probiotics</h4>
+                <p>Support your skin's microbiome for healthier, more resilient skin</p>
+            </div>
+            
+            <div class="ingredient-card">
+                <h4>Minerals</h4>
+                <p>Selenium and zinc provide antioxidant protection and skin repair</p>
+            </div>
+        </div>
+        
+        <h3>Organic Botanical Ingredients</h3>
+        
+        <p style="margin-bottom: 20px;">But goat milk is just the beginning. We've combined it with USDA certified organic botanical ingredients chosen for their proven skincare benefits:</p>
+        
+        <ul style="margin: 20px 0;">
+            <li><strong>Organic Shea Butter</strong> - Rich in vitamins A and E, provides intense moisture and helps improve skin elasticity</li>
+            <li><strong>Organic Virgin Argan Oil</strong> - Loaded with antioxidants and essential fatty acids to protect and repair</li>
+            <li><strong>Organic Jojoba Oil</strong> - Mimics your skin's natural sebum, balancing oil production and preventing breakouts</li>
+            <li><strong>Sodium Hyaluronate (Hyaluronic Acid)</strong> - Holds 1000x its weight in water, plumping fine lines and delivering lasting hydration</li>
+            <li><strong>Organic Aloe Vera</strong> - Soothes irritation and calms inflamed skin</li>
+            <li><strong>Organic Green Tea Extract</strong> - Powerful antioxidant that fights environmental damage and aging</li>
+            <li><strong>MSM (Methylsulfonylmethane)</strong> - Supports collagen production and reduces inflammation</li>
+            <li><strong>Vitamin E</strong> - Protects against free radical damage and environmental stressors</li>
+            <li><strong>Organic Frankincense Oil</strong> - Promotes cellular regeneration and has a luxurious, calming aroma</li>
+        </ul>
+        
+        <p style="margin: 20px 0; padding: 20px; background: #f5ebe0; border-radius: 8px;"><strong>The result?</strong> A smooth, non-greasy cream that absorbs quickly, hydrates deeply, and delivers visible results. Your skin will feel immediately softer and look noticeably brighter—and the benefits only improve with consistent use.</p>
+        
+        <h2>How to Use</h2>
+        
+        <h3>Morning Routine:</h3>
+        <ol style="margin: 15px 0 15px 20px; line-height: 1.8;">
+            <li>Cleanse your face with a gentle, natural cleanser</li>
+            <li>Pat dry—don't rub</li>
+            <li>While skin is still slightly damp, apply a dime-sized amount of face cream</li>
+            <li>Massage gently in upward, circular motions from center outward</li>
+            <li>Don't forget your neck and décolletage</li>
+            <li>Allow 30 seconds to absorb</li>
+            <li>Follow with SPF if needed</li>
+        </ol>
+        
+        <h3>Evening Routine:</h3>
+        <ol style="margin: 15px 0 15px 20px; line-height: 1.8;">
+            <li>Remove makeup and cleanse thoroughly</li>
+            <li>Apply toner if desired</li>
+            <li>While skin is slightly damp, apply face cream generously</li>
+            <li>Massage in using upward motions, giving extra attention to areas with fine lines</li>
+            <li>Allow the overnight repair magic to happen</li>
+        </ol>
+        
+        <h3>Pro Tips for Best Results:</h3>
+        <ul style="margin: 15px 0 15px 20px; line-height: 1.8;">
+            <li>Apply to damp skin—it helps lock in extra moisture</li>
+            <li>Use upward, outward motions to counteract gravity and boost circulation</li>
+            <li>A little goes a long way—start with a small amount and add more if needed</li>
+            <li>Can be layered over serums (apply serum first, wait 30 seconds, then moisturizer)</li>
+            <li>Perfect as a primer under makeup—it creates a smooth, hydrated canvas</li>
+            <li>Use morning and night consistently for 4-6 weeks to see full anti-aging benefits</li>
+        </ul>
+        
+        <h2>Complete Ingredient List</h2>
+        
+        <div style="background: #f9f9f9; padding: 25px; border-radius: 8px; margin: 20px 0;">
+            <p style="margin-bottom: 15px;"><strong>Active Ingredients:</strong></p>
+            <p>Aqua (Water), Goat Milk (Fresh, not reconstituted), Organic Aloe Barbadensis (Aloe Leaf) Extract, Organic Butyrospermum Parkii (Shea Butter), Organic Virgin Helianthus Annuus (Sunflower Oil), Cetearyl Alcohol and Glyceryl Stearate and Chlorelleth-20, Sodium Hyaluronate (Hyaluronic Acid), Stearic Acid, Organic Virgin Argania Spinosa (Argan) Oil, Organic Simmondsia Chinensis (Jojoba) Oil, Methylsulfonylmethane (MSM), Phenoxyethanol and Benzoic Acid and Dehydroacetic Acid, Organic Camellia Sinensis (Green Tea) Extract, Tocopherol Acetate (Vitamin E), Organic Boswellia Serrata (Frankincense) Oil</p>
+            
+            <p style="margin-top: 20px;"><strong>What We NEVER Use:</strong></p>
+            <p>✗ Parabens ✗ Titanium Dioxide ✗ Synthetic Fragrances ✗ Phthalates ✗ Sulfates ✗ GMO Ingredients ✗ Petrochemicals ✗ Mineral Oil ✗ Animal Testing</p>
+        </div>
+        
+        <h2>Frequently Asked Questions</h2>
+        
+        <div class="faq-item">
+            <div class="faq-question">Will this make my oily skin worse?</div>
+            <div class="faq-answer">No! Even though it's rich in nourishing ingredients, the formula is non-comedogenic (won't clog pores) and actually helps balance oil production. Many customers with oily skin love how it hydrates without making them greasy.</div>
+        </div>
+        
+        <div class="faq-item">
+            <div class="faq-question">Can I use this if I have acne?</div>
+            <div class="faq-answer">Absolutely. The lactic acid in goat milk helps prevent clogged pores, while the antimicrobial properties fight acne-causing bacteria. Plus, proper hydration actually helps regulate oil production and reduce breakouts.</div>
+        </div>
+        
+        <div class="faq-item">
+            <div class="faq-question">Is this safe during pregnancy?</div>
+            <div class="faq-answer">Our ingredients are natural and gentle. However, we always recommend consulting your healthcare provider about any skincare products during pregnancy or nursing.</div>
+        </div>
+        
+        <div class="faq-item">
+            <div class="faq-question">How long does one jar last?</div>
+            <div class="faq-answer">With daily morning and evening use, most customers find a 2 oz jar lasts 2-3 months. A little truly goes a long way!</div>
+        </div>
+        
+        <div class="faq-item">
+            <div class="faq-question">What does it smell like?</div>
+            <div class="faq-answer">Subtle and earthy with notes of frankincense—calming and luxurious, not overpowering. Definitely no "goat" smell!</div>
+        </div>
+        
+        <h2>Customer Reviews</h2>
+        
+        <div class="review-card">
+            <div class="stars">⭐⭐⭐⭐⭐</div>
+            <p>"Goat Milk Face Cream is the BEST! I was alarmed when my supplier, Azure Standard, discontinued carrying Artisan The Goat products. Fortunately I was able to order directly from the company. They quickly filled my order and included a generous gift of Hand Cream. The Artisan Face Cream keeps my skin wonderfully moisturized. Unlike other brands it absorbs well and moisturizes without leaving a greasy film on my face."</p>
+            <p style="margin-top: 10px; color: #666; font-style: italic;">— Verified Customer</p>
+        </div>
+        
+        <div class="review-card">
+            <div class="stars">⭐⭐⭐⭐⭐</div>
+            <p>"This cream uses all the wonderful attributes of high-butterfat goat milk. You only have one face, so pamper it well with goat milk face moisturizer!"</p>
+            <p style="margin-top: 10px; color: #666; font-style: italic;">— Verified Customer</p>
+        </div>
+        
+        <h2>Product Specifications</h2>
+        
+        <div style="background: #f9f9f9; padding: 25px; border-radius: 8px; margin: 20px 0;">
+            <ul style="list-style: none;">
+                <li><strong>Size:</strong> 2 fl oz (56g)</li>
+                <li><strong>Packaging:</strong> Glass jar (recyclable)</li>
+                <li><strong>Shelf Life:</strong> 12 months unopened, 6 months after opening</li>
+                <li><strong>Made in:</strong> Portland, Oregon, USA</li>
+                <li><strong>Established:</strong> 2017</li>
+                <li><strong>Skin Type:</strong> All skin types</li>
+                <li><strong>Texture:</strong> Smooth cream</li>
+                <li><strong>Finish:</strong> Naturally dewy</li>
+                <li><strong>Scent:</strong> Subtle frankincense</li>
+                <li><strong>Time of Use:</strong> Morning & evening</li>
+            </ul>
+        </div>
+        
+        <div style="text-align: center; margin: 60px 0;">
+            <h2>Ready to Transform Your Skin?</h2>
+            <p style="margin: 20px 0; font-size: 1.1em;">Experience the farm-fresh difference. Your skin deserves the purity of organic ingredients and the magic of fresh goat milk.</p>
+            <button class="cta-button" style="max-width: 400px; margin: 20px auto;">Add to Cart - $34.97</button>
+            <p style="margin-top: 20px; font-weight: 600;">Free Shipping on Orders Over $50 | Satisfaction Guaranteed</p>
+        </div>
+        
+    </div>
+</div>
+
+</body>
+</html>
