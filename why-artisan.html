@@ -1,0 +1,571 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- SEO Meta Tags -->
+    <title>Our Story: Three Goats That Changed Everything | Artisan The Goat</title>
+    <meta name="description" content="In 2009, three goats arrived during our darkest time. They saved our family and inspired a skincare revolution. Discover the authentic story behind Artisan The Goat.">
+    
+    <!-- Open Graph -->
+    <meta property="og:title" content="Our Story: Three Goats That Changed Everything | Artisan The Goat">
+    <meta property="og:description" content="The true story of how three goats, a family crisis, and the healing power of goat milk created Portland's most authentic skincare brand.">
+    
+    <!-- Schema Markup - About Page -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "AboutPage",
+      "name": "Why Artisan - Our Story",
+      "description": "The authentic story of how Artisan The Goat was founded in 2009 during a family crisis, and how three goats inspired a natural skincare revolution.",
+      "publisher": {
+        "@type": "Organization",
+        "name": "Artisan The Goat"
+      }
+    }
+    </script>
+    
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: Georgia, serif;
+            line-height: 1.8;
+            color: #333;
+            background: #fdfbf7;
+        }
+        
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        
+        /* Hero Section */
+        .hero {
+            background: linear-gradient(135deg, rgba(139, 111, 71, 0.9), rgba(111, 86, 57, 0.9)),
+                        url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 600"><rect fill="%23f5ebe0" width="1200" height="600"/></svg>');
+            background-size: cover;
+            background-position: center;
+            color: white;
+            padding: 100px 20px;
+            text-align: center;
+            margin-bottom: 60px;
+        }
+        
+        .hero h1 {
+            font-size: 3em;
+            margin-bottom: 20px;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+        }
+        
+        .hero-subtitle {
+            font-size: 1.3em;
+            font-style: italic;
+            opacity: 0.95;
+        }
+        
+        /* Story Sections */
+        .story-section {
+            margin: 80px 0;
+            padding: 60px 40px;
+            background: white;
+            border-radius: 15px;
+            box-shadow: 0 5px 20px rgba(0,0,0,0.08);
+        }
+        
+        .story-section h2 {
+            font-size: 2.5em;
+            color: #8b6f47;
+            margin-bottom: 30px;
+            text-align: center;
+            position: relative;
+            padding-bottom: 20px;
+        }
+        
+        .story-section h2:after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 100px;
+            height: 3px;
+            background: linear-gradient(90deg, transparent, #8b6f47, transparent);
+        }
+        
+        .story-section p {
+            font-size: 1.15em;
+            margin-bottom: 20px;
+            line-height: 1.9;
+        }
+        
+        .story-section.highlighted {
+            background: linear-gradient(135deg, #f5ebe0 0%, #e3d5ca 100%);
+            border-left: 5px solid #8b6f47;
+        }
+        
+        /* Emotional Story Styling */
+        .emotional-emphasis {
+            font-size: 1.25em;
+            font-weight: 600;
+            color: #8b6f47;
+            margin: 30px 0;
+            text-align: center;
+            font-style: italic;
+        }
+        
+        /* Science Section Special Styling */
+        .science-points {
+            margin: 30px 0;
+        }
+        
+        .science-point {
+            background: white;
+            padding: 25px;
+            margin: 20px 0;
+            border-left: 4px solid #8b6f47;
+            border-radius: 5px;
+        }
+        
+        .science-point h3 {
+            color: #8b6f47;
+            margin-bottom: 10px;
+            font-size: 1.4em;
+        }
+        
+        /* Values Section */
+        .values-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 25px;
+            margin: 40px 0;
+        }
+        
+        .value-card {
+            background: white;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+            border-top: 4px solid #8b6f47;
+        }
+        
+        .value-card h3 {
+            color: #8b6f47;
+            margin-bottom: 15px;
+            font-size: 1.3em;
+        }
+        
+        /* Quote Boxes */
+        .quote-box {
+            background: #f5ebe0;
+            padding: 40px;
+            margin: 40px 0;
+            border-left: 5px solid #8b6f47;
+            border-radius: 10px;
+            font-size: 1.2em;
+            font-style: italic;
+            line-height: 1.8;
+        }
+        
+        /* CTA Sections */
+        .cta-section {
+            background: linear-gradient(135deg, #8b6f47 0%, #6f5639 100%);
+            color: white;
+            padding: 60px 40px;
+            border-radius: 15px;
+            text-align: center;
+            margin: 80px 0;
+        }
+        
+        .cta-section h2 {
+            color: white;
+            font-size: 2.5em;
+            margin-bottom: 20px;
+        }
+        
+        .cta-section p {
+            font-size: 1.2em;
+            margin-bottom: 30px;
+            line-height: 1.8;
+        }
+        
+        .cta-button {
+            display: inline-block;
+            background: white;
+            color: #8b6f47;
+            padding: 18px 50px;
+            text-decoration: none;
+            border-radius: 50px;
+            font-size: 1.2em;
+            font-weight: 600;
+            margin: 10px;
+            transition: all 0.3s;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+        }
+        
+        .cta-button:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 8px 20px rgba(0,0,0,0.3);
+        }
+        
+        /* Timeline */
+        .timeline {
+            position: relative;
+            padding: 40px 0;
+        }
+        
+        .timeline-item {
+            margin: 40px 0;
+            padding-left: 60px;
+            position: relative;
+        }
+        
+        .timeline-item:before {
+            content: '';
+            position: absolute;
+            left: 15px;
+            top: 0;
+            width: 20px;
+            height: 20px;
+            border-radius: 50%;
+            background: #8b6f47;
+            border: 4px solid white;
+            box-shadow: 0 0 0 2px #8b6f47;
+        }
+        
+        .timeline-item h3 {
+            color: #8b6f47;
+            font-size: 1.5em;
+            margin-bottom: 10px;
+        }
+        
+        .goat-emoji {
+            font-size: 4em;
+            text-align: center;
+            margin: 30px 0;
+        }
+        
+        @media (max-width: 768px) {
+            .hero h1 {
+                font-size: 2em;
+            }
+            
+            .story-section {
+                padding: 40px 20px;
+            }
+            
+            .story-section h2 {
+                font-size: 1.8em;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<!-- HERO SECTION -->
+<div class="hero">
+    <h1>Three Goats Saved My Family</h1>
+    <p class="hero-subtitle">This is the story of how darkness, healing, and three charming goats created something extraordinary.</p>
+</div>
+
+<!-- STORY #1: THE ORIGIN -->
+<div class="container">
+    <div class="story-section highlighted">
+        <h2>🐐 The Beginning: 2009</h2>
+        
+        <p>In 2009, my family was falling apart.</p>
+        
+        <p>Someone we loved was seriously ill. The kind of sick where you don't know if they're going to make it. Where every day feels impossible.</p>
+        
+        <p>And in the middle of all that darkness, three goats showed up at our farm.</p>
+        
+        <p>I know that sounds random. But those three goats... they gave us something to care about when everything else felt hopeless.</p>
+        
+        <p>We'd go out every morning. Feed them. Talk to them. They didn't judge. They didn't need anything complicated. They just... existed. And somehow that was enough.</p>
+        
+        <div class="goat-emoji">🐐 🐐 🐐</div>
+        
+        <p>Slowly, our family member started to heal. And those goats went from companions to milk producers.</p>
+        
+        <p>We started experimenting in the kitchen. Goat milk ice cream. Cheese. Lasagna. Every recipe felt like a celebration of getting our life back.</p>
+        
+        <p class="emotional-emphasis">Then someone noticed: our skin looked different. Healthier. We couldn't figure out why.</p>
+        
+        <p>Until we started researching goat milk.</p>
+        
+        <p>Turns out, what was healing us on the inside was also healing us on the outside.</p>
+        
+        <div class="quote-box">
+            Same pH as human skin. Natural vitamins. Lactic acid for gentle renewal. Fatty acids that rebuild your skin barrier.
+        </div>
+        
+        <p>We couldn't keep that to ourselves.</p>
+        
+        <p>So in 2017, we started Artisan The Goat. Not because we wanted to be a skincare company. <strong>Because we wanted to share what helped heal us.</strong></p>
+        
+        <p>Those three goats are still here. Retired now. Living their best life.</p>
+        
+        <p>And every jar we make, we make with the same intention: to bring healing to someone else's life, the way those goats brought healing to ours.</p>
+        
+        <p class="emotional-emphasis">This isn't just skincare. It's the reason we're still here.</p>
+        
+        <p style="text-align: center; margin-top: 40px; font-size: 1.3em; color: #8b6f47;">That's the Artisan story. And if you choose us, you become part of it.</p>
+    </div>
+
+    <!-- STORY #2: THE SCIENCE -->
+    <div class="story-section">
+        <h2>🔬 Why Goat Milk Is Different</h2>
+        
+        <p style="font-size: 1.25em; text-align: center; margin-bottom: 40px;">Let me tell you why goat milk skincare is different from literally everything else you've tried. And I mean <em>everything.</em></p>
+        
+        <div class="science-points">
+            <div class="science-point">
+                <h3>First: pH Balance</h3>
+                <p>Your skin's pH is about 5.5. Slightly acidic. That's your skin's protective barrier.</p>
+                <p><strong>Most cleansers?</strong> pH of 9 or 10. Way too alkaline. They destroy your barrier every time you wash your face.</p>
+                <p><strong>Most moisturizers?</strong> pH of 7 or 8. Still too high. Your skin has to work to rebalance itself.</p>
+                <p><strong>Goat milk?</strong> pH of 5.5. Exact same as your skin.</p>
+                <p style="margin-top: 15px; color: #8b6f47; font-weight: 600;">Your skin doesn't have to fight it. It just... accepts it.</p>
+            </div>
+            
+            <div class="science-point">
+                <h3>Second: Natural Lactic Acid</h3>
+                <p>Most products add synthetic AHAs for exfoliation. Which can irritate sensitive skin.</p>
+                <p><strong>Goat milk?</strong> It IS lactic acid. Natural alpha-hydroxy acid that gently removes dead cells without the harshness.</p>
+            </div>
+            
+            <div class="science-point">
+                <h3>Third: Natural Vitamin A</h3>
+                <p>Everyone wants retinol for anti-aging. But retinol is harsh. Drying. Irritating.</p>
+                <p><strong>Goat milk contains retinyl palmitate.</strong> Natural vitamin A that promotes cell turnover without the side effects.</p>
+            </div>
+            
+            <div class="science-point">
+                <h3>Fourth: Fatty Acids That Rebuild</h3>
+                <p>Your skin barrier is made of lipids. When it's damaged, you get dryness, sensitivity, breakouts.</p>
+                <p><strong>Goat milk contains capric, caprylic, and caproic acids.</strong> Medium-chain fatty acids that literally rebuild your barrier.</p>
+            </div>
+            
+            <div class="science-point">
+                <h3>Fifth: Prebiotics for Your Microbiome</h3>
+                <p>Your skin has a microbiome. Billions of beneficial bacteria that protect you.</p>
+                <p><strong>Most products destroy it. Goat milk feeds it.</strong></p>
+            </div>
+        </div>
+        
+        <div class="quote-box">
+            This isn't marketing. This is biochemistry. Goat milk isn't just another ingredient. It's the ingredient your skin has been waiting for.
+        </div>
+        
+        <p style="text-align: center; margin-top: 40px; font-size: 1.2em;">Cleopatra knew it in 50 BC. Modern science proved it in 2025. Your skin will feel it the first time you use it.</p>
+        
+        <p class="emotional-emphasis">That's not a promise. That's chemistry.</p>
+    </div>
+
+    <!-- STORY #3: THE TRANSFORMATION -->
+    <div class="story-section highlighted">
+        <h2>✨ Real Transformation</h2>
+        
+        <p style="font-size: 1.2em; font-style: italic; text-align: center; margin-bottom: 30px;">"I tried everything. Nothing worked. Until this."</p>
+        
+        <p>For ten years, I had bad skin.</p>
+        
+        <p>Not just "oh, I broke out a little." I mean... bad. Painful cystic acne. Dry patches. Redness. Sensitivity to everything.</p>
+        
+        <p><strong>I tried everything.</strong></p>
+        
+        <p>Dermatologist prescriptions. Korean 10-step routines. French luxury brands. Clean beauty. Drugstore. High-end. <em>Everything.</em></p>
+        
+        <p>Nothing worked. Or it would work for two weeks and then stop. Or it would fix one problem and create three new ones.</p>
+        
+        <p>I spent thousands of dollars. Thousands. My bathroom looked like Sephora exploded.</p>
+        
+        <p>And my skin? Still terrible.</p>
+        
+        <p class="emotional-emphasis">I actually started to believe this was just... my face now. That I'd have bad skin forever.</p>
+        
+        <p>Then a friend said, "Try this."</p>
+        
+        <p>Goat milk moisturizer. One product. From a farm in Oregon.</p>
+        
+        <p>I laughed. "I've tried forty products. What's one more?"</p>
+        
+        <p>But I was desperate. So I tried it.</p>
+        
+        <div class="timeline">
+            <div class="timeline-item">
+                <h3>First Night</h3>
+                <p>It felt good going on. Absorbed fast. No greasiness. Okay, fine.</p>
+            </div>
+            
+            <div class="timeline-item">
+                <h3>First Week</h3>
+                <p>My skin felt... calmer. Less reactive.</p>
+            </div>
+            
+            <div class="timeline-item">
+                <h3>First Month</h3>
+                <p>I looked in the mirror and actually gasped.</p>
+                <p>My skin was clear. Not perfect—but CLEAR. The redness was fading. The texture was smoothing out. The breakouts were gone.</p>
+            </div>
+        </div>
+        
+        <p>I stopped using everything else. Just goat milk moisturizer. Morning and night.</p>
+        
+        <p>It's been six months now.</p>
+        
+        <p><strong>People ask me what I did to my skin.</strong> They think I got treatments. Facials. Something expensive.</p>
+        
+        <div class="quote-box">
+            I tell them: I stopped fighting my skin and started working with it. I found one thing with ingredients my skin actually recognizes.
+        </div>
+        
+        <p>One thing that costs $25. One thing that finally, FINALLY worked.</p>
+        
+        <p style="text-align: center; margin-top: 40px; font-size: 1.3em; color: #8b6f47;">If you've tried everything and nothing has worked... I get it. I was you.</p>
+        
+        <p class="emotional-emphasis">But maybe—just maybe—you haven't tried the one thing that will. What if this is it?</p>
+    </div>
+
+    <!-- STORY #4: THE VALUES -->
+    <div class="story-section">
+        <h2>💙 What We Believe</h2>
+        
+        <p style="font-size: 1.2em; text-align: center; margin-bottom: 40px;">We've been offered a lot of money to sell this company. Big corporations. Private equity. People who could make us rich overnight.</p>
+        
+        <p class="emotional-emphasis">We said no. Every single time.</p>
+        
+        <p style="text-align: center; font-size: 1.15em;">Because this company isn't about money.</p>
+        
+        <h3 style="text-align: center; font-size: 1.5em; color: #8b6f47; margin: 40px 0 30px;">Let me tell you what we believe.</h3>
+        
+        <div class="values-grid">
+            <div class="value-card">
+                <h3>🌿 Your Skin is Sacred</h3>
+                <p>What you put on it matters. Not just for beauty—for health.</p>
+            </div>
+            
+            <div class="value-card">
+                <h3>🔍 Transparency Isn't Optional</h3>
+                <p>If we won't tell you exactly what's in our products and why, we don't deserve your trust.</p>
+            </div>
+            
+            <div class="value-card">
+                <h3>🌱 Natural Is a Commitment</h3>
+                <p>USDA Organic certification. Third-party audits. Proof, not promises.</p>
+            </div>
+            
+            <div class="value-card">
+                <h3>✋ Small Is Better</h3>
+                <p>We could scale to massive production and get rich. But quality would suffer. So we stay small. We stay careful. We stay obsessed with every single batch.</p>
+            </div>
+            
+            <div class="value-card">
+                <h3>🐐 Our Goats Matter</h3>
+                <p>They're not production units. They're family. They get organic feed, open pastures, and respect. Happy goats make better milk. Period.</p>
+            </div>
+            
+            <div class="value-card">
+                <h3>💪 Wellness Is Holistic</h3>
+                <p>That's why our farm has a sauna, cold plunge, and gym. Because we can't preach skin health while ignoring body health.</p>
+            </div>
+            
+            <div class="value-card">
+                <h3>👤 You're Not a Transaction</h3>
+                <p>You're a person. With a story. With struggles. With hopes for your skin and your life.</p>
+            </div>
+            
+            <div class="value-card">
+                <h3>🤝 Community Beats Customers</h3>
+                <p>We'd rather have a thousand people who love us than a million who bought once and forgot.</p>
+            </div>
+            
+            <div class="value-card">
+                <h3>💬 Honesty Beats Hype</h3>
+                <p>We won't promise miracles. We'll promise ingredients that work, made with integrity, by people who care.</p>
+            </div>
+        </div>
+        
+        <div class="quote-box" style="margin-top: 50px;">
+            And we believe that if we stay true to these values, the right people will find us. People like you.
+        </div>
+        
+        <p class="emotional-emphasis" style="font-size: 1.4em;">This is what we stand for. If that resonates, you're home.</p>
+    </div>
+
+    <!-- STORY #5: THE INVITATION -->
+    <div class="cta-section">
+        <h2>Here's What Happens When You Join Us</h2>
+        
+        <p>Okay, so you're interested.</p>
+        
+        <p>You've heard the story. You understand the science. You've seen the transformations. You align with our values.</p>
+        
+        <p style="font-size: 1.4em; font-weight: 600; margin: 30px 0;">Now what?</p>
+        
+        <div style="background: rgba(255,255,255,0.1); padding: 40px; border-radius: 15px; margin: 40px 0; text-align: left;">
+            <p><strong>First:</strong> You order. One jar. USDA Organic goat milk moisturizer. Made fresh in small batches on our farm in Oregon.</p>
+            
+            <p style="margin-top: 20px;"><strong>We pack it with care.</strong> Not by robots in some warehouse. By us. By hand.</p>
+            
+            <p style="margin-top: 20px;"><strong>It arrives at your door.</strong> You open it. It smells like... nothing. Because we don't add fragrance. Just pure ingredients.</p>
+            
+            <p style="margin-top: 20px;"><strong>You try it that night.</strong> You'll notice: it absorbs fast. No grease. No film. Just soft skin.</p>
+            
+            <p style="margin-top: 20px;"><strong>Within three days,</strong> you'll feel a difference. Your skin will feel calmer. More balanced.</p>
+            
+            <p style="margin-top: 20px;"><strong>Within two weeks,</strong> you'll see a difference. Texture smoother. Tone more even. That glow people talk about? You'll have it.</p>
+            
+            <p style="margin-top: 20px;"><strong>Within a month,</strong> you'll be a believer.</p>
+        </div>
+        
+        <p style="font-size: 1.2em; margin: 30px 0;">And here's where it gets good.</p>
+        
+        <p>You'll use less than you think. A little goes a long way. That $35 jar? Lasts six to eight weeks with twice-daily use.</p>
+        
+        <p style="font-size: 1.3em; font-weight: 600;">That's about a dollar a day. For skin that actually works.</p>
+        
+        <p>No ten-step routine. No cabinets full of products. Just one thing that does what it should.</p>
+        
+        <p>You'll notice you stop looking at other skincare. You found what works. Why keep searching?</p>
+        
+        <p><strong>You'll tell a friend.</strong> Not because we asked. Because you can't help it when something actually changes your skin.</p>
+        
+        <p>They'll try it. They'll love it. The community grows.</p>
+        
+        <div style="margin: 50px 0; padding: 30px; background: rgba(255,255,255,0.15); border-radius: 10px;">
+            <p style="font-size: 1.3em;">And every time you buy, you're supporting a real family. Real goats. A real farm.</p>
+            <p style="font-size: 1.3em; margin-top: 15px;">Not a corporation. Not shareholders. Us.</p>
+        </div>
+        
+        <p style="font-size: 1.4em; margin: 40px 0 30px;">That's what happens when you join Artisan. You get great skin. We get to keep doing what we love. Everybody wins.</p>
+        
+        <h3 style="font-size: 2em; margin: 50px 0 30px;">So here's my question: Are you ready?</h3>
+        
+        <p style="font-size: 1.2em; margin-bottom: 40px;">Because we're ready for you.</p>
+        
+        <a href="../index.html#products" class="cta-button">Shop Our Collection</a>
+        <a href="product-face-cream.html" class="cta-button">Start With Face Cream</a>
+        
+        <p style="margin-top: 40px; font-size: 1.1em;">If it doesn't change your skin, we'll make it right.</p>
+        
+        <p style="margin-top: 20px; font-size: 1.2em;">But I think you're about to find what thousands of others have found:</p>
+        
+        <p style="font-size: 1.4em; font-weight: 600; margin-top: 20px;">The thing you've been searching for was here all along.</p>
+        
+        <div style="margin-top: 60px; padding-top: 40px; border-top: 2px solid rgba(255,255,255,0.3);">
+            <p style="font-size: 1.8em; font-weight: 600;">Welcome to the family.</p>
+            <p style="font-size: 1.3em; margin-top: 15px;">We've been waiting for you.</p>
+        </div>
+    </div>
+
+</div>
+
+</body>
+</html>
